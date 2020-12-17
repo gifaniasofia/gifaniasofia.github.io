@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Cat Food Store Shopping</title>
+        <title>Cat Food Store Home</title>
         <link rel="stylesheet" href="style.css" type="text/css">
     </head>
     <body>
         <div class="topnav">
-            <img class="center logo" src="./img/logo.png" alt="logo"/>
+            <img class="center logo" src="img/logo.png" alt="logo"/>
             <h1>Cat Food Store</h1>
-            <a href="home.html">Home</a>
-            <a class="active" href="shopping.html">Shopping</a>
+            <a class="active" href="home.html">Home</a>
+            <a href="shopping.html">Shopping</a>
             <a href="#socmed-info">Social Media</a>
             <img class="shopping-cart" src="./img/shopping-cart.png" alt="cart"/>
             <span id="number">0</span>
@@ -19,7 +19,16 @@
                 </form>
             </div>
         </div>
-        <div id="content">
+        <div id="home_content">
+            <img class="slides" src="./img/cat-feeding1.jpg" style="width: 100%;"/>
+            <img class="slides" src="./img/cat-feeding2.jpg" style="width: 100%;" />
+            <h1>Sayangi kucing Anda dengan membeli makanan favoritnya!</h1>
+            <p>Di website ini Anda dapat membeli makanan dan camilan untuk kucing kesayangan Anda dengan berbagai merk yang ada di seluruh dunia!
+               Ayo pesan produk pilihan Anda dan produk Anda akan segera dikirim. Jangan lupa beli sesuai kebutuhan kucingnya ya. Disini Anda bebas
+               memilih berbagai produk mulai dari makanan kering, basah, dan camilan favoritnya untuk <i>baby</i>, <i>kitten</i>, <i>adult</i>, maupun <i>senior adult</i>!
+               Anda juga bisa berkonsultasi dengan kami melalui <i>direct message</i> secara gratis!
+            </p>
+            <button class="button center"><a href="shopping.html"><span>Belanja Sekarang</span></a></button>
         </div>
         <img src="./img/message.png" class="open-button" onclick="openForm()"/>
         <div class="chat-popup" id="chatForm">
@@ -30,27 +39,28 @@
             <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
         </form>
         </div>
+
         <hr>
         <div id="socmed-info">
             <h3>Kunjungi sosial media kami lainnya!</h3>
             <ul>
                 <li class="social-media">
-                  <img src="./img/instagram.png" alt="logoIG"/>
+                  <img src="./img/instagram.png" alt="logoIG" onclick="IGWin()" />
                 </li>
                 <li class="social-media">
-                  <img src="./img/facebook.png" alt="logoFB" />
+                  <img src="./img/facebook.png" alt="logoFB" onclick="FBWin()"/>
                 </li>
                 <li class="social-media">
-                  <img src="./img/twitter.png" alt="logoTW" />
+                  <img src="./img/twitter.png" alt="logoTW" onclick="TWWin()"/>
                 </li>
                 <li class="social-media">
-                    <img src="./img/gmail.png" alt="logoGM" />
+                    <img src="./img/gmail.png" alt="logoGM" onclick="GMWin()"/>
                 </li>
             </ul>
         </div>
         <footer>
             <h5>copyright &copy; Cat Food Store</h5>
         </footer>
-        <script src="script2.js"></script>
+        <script src="script1.js"></script>
     </body>
 </html>

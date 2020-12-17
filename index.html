@@ -1,64 +1,53 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Market Place</title>
-        <link rel="stylesheet" href="style.css" type="text/css">
+        <title>Cat Food Store</title>
+        <link rel="stylesheet" href="styleForm.css" type="text/css">
     </head>
     <body>
-        <div class="topnav">
-            <img class="center logo" src="img/logo.png" alt="logo"/>
-            <h1>Cat Food Store</h1>
-            <a class="active" href="index.html">Home</a>
-            <a href="shopping.html">Shopping</a>
-            <a href="#Register">Register/Login</a>
-            <img class="shopping-cart" src="./img/shopping-cart.png" alt="cart"/>
-            <div class="search-container">
-                <form action="#">
-                    <input type="text" placeholder="Cari nama makanan ..." id="search_product" oninput="search()">
-                    <!-- <button style="display: inline;" type="submit"><i class="fa fa-search"></i></button> -->
+        <div class="section">
+            <div class="title-text">
+                <div class="title login">Login</div>
+                <div class="title register">Register</div>
+            </div>
+            <div class="container">
+                <div class="slide-controls">
+                    <input type="radio" name="slide" id="login" checked>
+                    <input type="radio" name="slide" id="register">
+                    <label for="login" class="slide login">Login</label>
+                    <label for="register" class="slide register">Register</label>
+                <div class="slider-tab"></div>
+            </div>
+            <div class="inner">
+                <form action="home.html" class="login" onSubmit="return submitLogin(this);">
+                    <div class="field">
+                        <input type="text" placeholder="Email Address" required>
+                    </div>
+                    <div class="field">
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" value="Login">
+                    </div>
+                </form>
+                <form action="home.html" class="register" onSubmit="return submitRegister(this);">
+                    <div class="field">
+                        <input type="text" placeholder="Email Address" required>
+                    </div>
+                    <div class="field">
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <div class="field">
+                        <input type="password" placeholder="Confirm password" required>
+                    </div>
+                    <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" value="Register">
+                    </div>
                 </form>
             </div>
         </div>
-        <div id="home_content">
-            <img class="slides" src="./img/cat-feeding1.jpg" style="width: 100%;"/>
-            <img class="slides" src="./img/cat-feeding2.jpg" style="width: 100%;" />
-            <h1>Sayangi kucing Anda dengan membeli makanan yang tepat!</h1>
-            <p>Di website ini Anda dapat membeli makanan dan camilan untuk kucing kesayangan Anda dengan berbagai merk yang ada di seluruh dunia!
-               Ayo klik produk pilihan Anda dan produk Anda akan segera dikirim. Jangan lupa beli sesuai kebutuhan kucingnya ya.
-               Anda juga bisa berkonsultasi dengan kami melalui <i>direct message</i> secara gratis!
-            </p>
-        </div>
-        <img src="./img/message.png" class="open-button" onclick="openForm()"/>
-        <!-- <button class="open-button" onclick="openForm()">Chat</button> -->
-        <div class="chat-popup" id="myForm">
-        <form action="" class="form-container">
-            <label for="msg"><b>Message</b></label>
-            <textarea placeholder="Apa yang ingin Anda Tanyakan?" name="msg" required></textarea>
-            <button type="submit" class="btn">Send</button>
-            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-        </form>
-        </div>
-
-        <hr>
-        <div id="contact-info">
-            <ul>
-                <li class="social-media">
-                  <img src="./img/instagram.png" alt="logoIG" />
-                </li>
-                <li class="social-media">
-                  <img src="./img/facebook.png" alt="logoFB" />
-                </li>
-                <li class="social-media">
-                  <img src="./img/twitter.png" alt="logoTW" />
-                </li>
-                <li class="social-media">
-                    <img src="./img/gmail.png" alt="logoGM" />
-                </li>
-            </ul>
-        </div>
-        <footer>
-            <h5>copyright &copy; Cat Food Store</h5>
-        </footer>
-        <script src="script1.js"></script>
+        <script src="script3.js"></script>
     </body>
 </html>

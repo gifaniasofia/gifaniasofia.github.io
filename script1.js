@@ -13,10 +13,26 @@ function slides() {
 }
 
 function openForm() {
-    document.getElementById("myForm").style.display = "block";
+    document.getElementById("chatForm").style.display = "block";
 }
   
 function closeForm() {
-    document.getElementById("myForm").style.display = "none";
+    document.getElementById("chatForm").style.display = "none";
+}
+
+function IGWin() {
+    let IGWindow = window.open("https://www.instagram.com", "_blank", "width=500, height=500");
+}
+
+function FBWin() {
+    let FBWindow = window.open("https://www.facebook.com", "_blank", "width=500, height=500");
+}
+
+function TWWin() {
+    let TWWindow = window.open("https://www.twitter.com", "_blank", "width=500, height=500");
+}
+
+function GMWin() {
+    let GMWindow = window.open("https://www.gmail.com", "_blank", "width=500, height=500");
 }
 
