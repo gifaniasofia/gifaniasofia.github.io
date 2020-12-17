@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Market Place</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <div class="topnav">
+            <img class="center logo" src="./img/logo.png" alt="logo"/>
+            <h1>Cat Food Store</h1>
+            <a href="index.html">Home</a>
+            <a class="active" href="shopping.html">Shopping</a>
+            <a href="#Register">Register/Login</a>
+            <img class="shopping-cart" src="./img/shopping-cart.png" alt="cart"/>
+            <div class="search-container">
+                <form action="#">
+                    <input type="text" placeholder="Cari nama makanan ..." id="search_product" oninput="search()">
+                    <!-- <button style="display: inline;" type="submit"><i class="fa fa-search"></i></button> -->
+                </form>
+            </div>
+        </div>
+        <div id="content">
+        </div>
+        <img src="./img/message.png" class="open-button" onclick="openForm()"/>
+        <!-- <button class="open-button" onclick="openForm()">Chat</button> -->
+        <div class="chat-popup" id="myForm">
+        <form action="" class="form-container">
+            <label for="msg"><b>Message</b></label>
+            <textarea placeholder="Apa yang ingin Anda Tanyakan?" name="msg" required></textarea>
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+        </div>
+
+        <hr>
+        <div id="contact-info">
+            <ul>
+                <li class="social-media">
+                  <img src="./img/instagram.png" alt="logoIG" />
+                </li>
+                <li class="social-media">
+                  <img src="./img/facebook.png" alt="logoFB" />
+                </li>
+                <li class="social-media">
+                  <img src="./img/twitter.png" alt="logoTW" />
+                </li>
+                <li class="social-media">
+                    <img src="./img/gmail.png" alt="logoGM" />
+                </li>
+            </ul>
+        </div>
+        <footer>
+            <h5>copyright &copy; Cat Food Store</h5>
+        </footer>
+
+
+
+
+        <script src="script2.js"></script>
+    </body>
+</html>
