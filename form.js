@@ -14,11 +14,11 @@ loginBtn.onclick = (()=>{
 });
 
 function submitLogin() {
-    const name_email = document.getElementById("email_login").value;
-    return alert(`Selamat berbelanja di Cat Food Store, ${name_email}!`)
+    const user_email = document.getElementById("email_login").value.split("@")[0];
+    return alert(`Selamat berbelanja di Cat Food Store, ${user_email}!`)
 }
 
 function submitRegister() {
-    const name_email = document.getElementById("email_regist").value;
-    return alert(`Selamat bergabung dan berbelanja di Cat Food Store, ${name_email}!`)
+    const user_email = document.getElementById("email_regist").value.split("@")[0];
+    return alert(`Selamat bergabung dan berbelanja di Cat Food Store, ${user_email}!`)
 }
