@@ -84,26 +84,6 @@ body {
     margin-left: 45px;
 }
 
-/* #buttonFilter {
-    margin-left: 110px;
-}
-
-#buttonFilter .btnFltr {
-    margin: 10px;
-    padding: 12px 16px;
-    background-color: orange;
-    cursor: pointer;
-    font-family: "Comic Sans MS", Arial, Helvetica, sans-serif;
-    color: #ffffff;
-    border: none;
-}
-
-#buttonFilter .btnFltr:hover {
-    background-color: #fff4e1;
-    color: #000000;
-    border: none;
-} */
-
 #content {
     text-align: center;
     font-size: 10px;
@@ -147,6 +127,18 @@ body {
     font-size: 16px;
 }
 
+.btn-add-to-cart {
+    background-color: green !important;
+}
+
+.hide {
+    display: none;
+}
+
+.btn-remove {
+    background-color: red !important;
+}
+
 .card button:hover {
     opacity: 0.7;
 }
@@ -162,17 +154,6 @@ body {
     left: 0;
     width: 90%;
     margin: 0 auto;
-}
-
-.popup .popupText::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
 }
 
 .open-button {
