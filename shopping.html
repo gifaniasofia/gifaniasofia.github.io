@@ -19,9 +19,17 @@
                 </form>
             </div>
         </div>
-        <div id="content">
+        <div class="shop_content">
+            <p class="caption">Silakan melakukan pencarian produk berdasarkan keyword apapun dan tambahkan pada keranjang Anda</p>
+            <!-- <div id="buttonFilter">
+                <button class="btnFltr" onclick="filterObj('all')">Show All</button>
+                <button class="btnFltr" onclick="filterObj('junior')">Baby/Junior/Kitten</button>
+                <button class="btnFltr" onclick="filterObj('adult')">Adult</button>
+                <button class="btnFltr" onclick="filterObj('senior')">Senior Adult</button>
+            </div> -->
+            <div id="content"></div>
+            <img src="./img/message.png" class="open-button" onclick="openForm()"/>
         </div>
-        <img src="./img/message.png" class="open-button" onclick="openForm()"/>
         <div class="chat-popup" id="chatForm">
         <form action="" class="form-container">
             <label for="msg"><b>Message</b></label>
@@ -35,22 +43,22 @@
             <h3>Kunjungi sosial media kami lainnya!</h3>
             <ul>
                 <li class="social-media">
-                  <img src="./img/instagram.png" alt="logoIG"/>
+                  <img src="./img/instagram.png" alt="logoIG" onclick="IGWin()" />
                 </li>
                 <li class="social-media">
-                  <img src="./img/facebook.png" alt="logoFB" />
+                  <img src="./img/facebook.png" alt="logoFB" onclick="FBWin()" />
                 </li>
                 <li class="social-media">
-                  <img src="./img/twitter.png" alt="logoTW" />
+                  <img src="./img/twitter.png" alt="logoTW" onclick="TWWin()" />
                 </li>
                 <li class="social-media">
-                    <img src="./img/gmail.png" alt="logoGM" />
+                    <img src="./img/gmail.png" alt="logoGM" onclick="GMWin()" />
                 </li>
             </ul>
         </div>
         <footer>
             <h5>copyright &copy; Cat Food Store</h5>
         </footer>
-        <script src="script2.js"></script>
+        <script src="shopping.js"></script>
     </body>
 </html>
